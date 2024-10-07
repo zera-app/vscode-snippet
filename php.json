@@ -1,0 +1,785 @@
+{
+	"public function": {
+		"prefix": "pubfunc",
+		"body": [
+			"/**",
+			" * ${1:functionName} ",
+			" */",
+			"public function ${1:functionName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Public function"
+	},
+	"protected function": {
+		"prefix": "protfunc",
+		"body": [
+			"/**",
+			" * ${1:functionName} ",
+			" */",
+			"protected function ${1:functionName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected function"
+	},
+	"private function": {
+		"prefix": "privfunc",
+		"body": [
+			"/**",
+			" * ${1:functionName} ",
+			" */",
+			"private function ${1:functionName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private function"
+	},
+	"Class Constructor": {
+		"prefix": "__const",
+		"body": [
+			"/**",
+			" * Instantiate a new {$1:ClassName} instance.",
+			" */",
+			"public function __construct(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Constructor function"
+	},
+	"Class Destructor": {
+		"prefix": "__destruct",
+		"body": [
+			"/**",
+			" * Destructor of {$1:ClassName} instance.",
+			" */",
+			"public function __destruct(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Destructor function"
+	},
+	"public function get ": {
+		"prefix": "pubfuncget",
+		"body": [
+			"/**",
+			" * Get property ${1:propertyName}",
+			" */",
+			"public function get${1:propertyName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "public function getter"
+	},
+	"public function set ": {
+		"prefix": "pubfuncset",
+		"body": [
+			"/**",
+			" * Set property ${1:propertyName}",
+			" */",
+			"public function set${1:propertyName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "public function setter"
+	},
+	"private function get ": {
+		"prefix": "prifuncget",
+		"body": [
+			"/**",
+			" * get property ${1:propertyName}",
+			" */",
+			"private function get${1:propertyName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private function getter"
+	},
+	"private function set ": {
+		"prefix": "prifuncset",
+		"body": [
+			"/**",
+			" * set property ${1:propertyName}",
+			" */",
+			"private function set${1:propertyName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private function setter"
+	},
+	"protected function get ": {
+		"prefix": "profuncget",
+		"body": [
+			"/**",
+			" * get property ${1:propertyName}",
+			" */",
+			"protected function get${1:propertyName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected function getter"
+	},
+	"protected function set ": {
+		"prefix": "profuncset",
+		"body": [
+			"/**",
+			" * set property ${1:propertyName}",
+			" */",
+			"protected function set${1:propertyName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected function setter"
+	},
+	"protected static function ": {
+		"prefix": "profuncstatic",
+		"body": [
+			"/**",
+			" * ${1:functionName}",
+			" */",
+			"protected static function ${1:functionName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected static function"
+	},
+	"public static function ": {
+		"prefix": "pubfuncstatic",
+		"body": [
+			"/**",
+			" * ${1:functionName}",
+			" */",
+			"public static function ${1:functionName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Public static function"
+	},
+	"private static function ": {
+		"prefix": "prifuncstatic",
+		"body": [
+			"/**",
+			" * ${1:functionName}",
+			" */",
+			"private static function ${1:functionName}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private static function"
+	},
+	"anonymous function": {
+		"prefix": "anofunc",
+		"body": ["function (${1:arguments}) {", "\t${2:// body}", "}"],
+		"description": "anonymous function"
+	},
+	"arrow function": {
+		"prefix": "infunc",
+		"body": ["fn (${1:arguments}) => ${2:code}"],
+		"description": "Arrow function"
+	},
+
+	"variable string": {
+		"prefix": "varstr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = \"${2:value}\";"
+		],
+		"description": "Variable string"
+	},
+	"variable int": {
+		"prefix": "varint",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = ${2:value};"
+		],
+		"description": "Variable int"
+	},
+	"variable boolean": {
+		"prefix": "varbool",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = ${2:true};"
+		],
+		"description": "Variable boolean"
+	},
+	"variable float": {
+		"prefix": "varfloat",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = ${2:0.0};"
+		],
+		"description": "Variable float"
+	},
+	"variable array": {
+		"prefix": "vararr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = [${2:values}];"
+		],
+		"description": "Variable array"
+	},
+	"variable object": {
+		"prefix": "varobj",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"{1:variableName} = {${2:values}};"
+		],
+		"description": "Variable array"
+	},
+
+	"public variable string": {
+		"prefix": "pubvarstr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"public string $${1:variableName} = \"${2:value}\";"
+		],
+		"description": "Public variable string"
+	},
+	"public variable int": {
+		"prefix": "pubvarint",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"public int $${1:variableName} = ${2:value};"
+		],
+		"description": "Public variable int"
+	},
+	"public variable boolean": {
+		"prefix": "pubvarbool",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"public bool $${1:variableName} = ${2:true};"
+		],
+		"description": "Public variable boolean"
+	},
+	"public variable float": {
+		"prefix": "pubvarfloat",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"public floar $${1:variableName} = ${2:0.0};"
+		],
+		"description": "Public variable float"
+	},
+	"public variable array": {
+		"prefix": "pubvararr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"public array $${1:variableName} = [${2:values}];"
+		],
+		"description": "Public variable array"
+	},
+	"public variable object": {
+		"prefix": "pubvarobj",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"public $${1:variableName} = {${2:values}};"
+		],
+		"description": "Public variable array"
+	},
+	"private variable string": {
+		"prefix": "privarstr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"private string $${1:variableName} = \"${2:value}\";"
+		],
+		"description": "private variable string"
+	},
+	"private variable int": {
+		"prefix": "privarint",
+		"body": [
+			"/**",
+			" * @var int",
+			" */",
+			"private int $${1:variableName} = ${2:value};"
+		],
+		"description": "private variable int"
+	},
+	"private variable boolean": {
+		"prefix": "privarbool",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"private bool $${1:variableName} = ${2:true};"
+		],
+		"description": "private variable boolean"
+	},
+	"private variable float": {
+		"prefix": "privarfloat",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"private float $${1:variableName} = ${2:0.0};"
+		],
+		"description": "private variable float"
+	},
+	"private variable array": {
+		"prefix": "privararr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"private array $${1:variableName} = [${2:values}];"
+		],
+		"description": "private variable array"
+	},
+	"private variable object": {
+		"prefix": "privarobj",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"private object $${1:variableName} = {${2:values}};"
+		],
+		"description": "private variable array"
+	},
+	"protected variable string": {
+		"prefix": "provarstr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"protected string $${1:variableName} = \"${2:value}\";"
+		],
+		"description": "Protected variable string"
+	},
+	"protected variable int": {
+		"prefix": "provarint",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"protected int $${1:variableName} = ${2:value};"
+		],
+		"description": "Protected variable int"
+	},
+	"protected variable boolean": {
+		"prefix": "provarbool",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"protected bool $${1:variableName} = ${2:true};"
+		],
+		"description": "Protected variable boolean"
+	},
+	"protected variable float": {
+		"prefix": "provarfloat",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"protected float $${1:variableName} = ${2:0.0};"
+		],
+		"description": "Protected variable float"
+	},
+	"protected variable array": {
+		"prefix": "provararr",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"protected $${1:variableName} = [${2:values}];"
+		],
+		"description": "Protected variable array"
+	},
+	"protected variable object": {
+		"prefix": "provarobj",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"protected object $${1:variableName} = {${2:values}};"
+		],
+		"description": "Protected variable array"
+	},
+
+	"The table associated with the model": {
+		"prefix": "modeltablename",
+		"body": [
+			"/**",
+			" * The table associated with the model.",
+			" */",
+			"protected \\$table = \"${1:table_names}\";"
+		],
+		"description": "Function the table associated with the model"
+	},
+
+	"The primary key associated with the table.": {
+		"prefix": "modelid",
+		"body": [
+			"/**",
+			" * The primary key associated with the table.",
+			" */",
+			"protected \\$primaryKey = \"${1:table_id}\";"
+		],
+		"description": "Function the primary key associated with the table."
+	},
+	"The data type of the auto-incrementing ID.": {
+		"prefix": "modelKey",
+		"body": [
+			"/**",
+			" * The data type of the auto-incrementing ID.",
+			" */",
+			"protected \\$keyType = \"${1:string}\";"
+		],
+		"description": "The data type of the auto-incrementing ID."
+	},
+	"The model's default values for attributes.": {
+		"prefix": "modelattr",
+		"body": [
+			"/**",
+			" * The model's default values for attributes.",
+			" */",
+			"protected \\$attributes = [$1];"
+		],
+		"description": "Function the model's default values for attributes."
+	},
+	"The attributes that are mass assignable.": {
+		"prefix": "modelfillable",
+		"body": [
+			"/**",
+			" * The attributes that are mass assignable.",
+			" */",
+			"protected \\$fillable = [$1];"
+		],
+		"description": "Function the attributes that are mass assignable."
+	},
+	"The attributes that aren't mass assignable.": {
+		"prefix": "modelguard",
+		"body": [
+			"/**",
+			"* The attributes that aren't mass assignable.",
+			"*/",
+			"protected $guarded = [];"
+		],
+		"description": "Function the attributes that aren't are mass assignable."
+	},
+	"The \"booted\" method of the model.": {
+		"prefix": "modelboot",
+		"body": [
+			"/**",
+			" * The \"booted\" method of the model.",
+			" */",
+			"protected static function booted()",
+			"{",
+			"\t// code$1",
+			"}"
+		],
+		"description": "Function the \"booted\" method of the model."
+	},
+	"Apply the scope to a given Eloquent query builder": {
+		"prefix": "modelscope",
+		"body": [
+			"/**",
+			" * Apply the scope to a given Eloquent query builder.",
+			" */",
+			"public function apply(Builder $builder, Model $model)",
+			"{",
+			"\t\\$builder->where('${1:column_name}', '${2:condition}', '${3:value}');",
+			"}"
+		],
+		"description": "Function Apply the scope to a given Eloquent query builder"
+	},
+	"Apply the scope to a given column Eloquent query builder": {
+		"prefix": "modelcast",
+		"body": [
+			"/**",
+			" * The attributes that should be cast.",
+			" */",
+			"protected \\$casts = [",
+			"\t'${1:column_name}' => '${2:cast_type}',",
+			"];"
+		],
+		"description": "Function Apply the scope to a given column Eloquent query builder"
+	},
+	"Laravel Eloquent model casting": {
+		"prefix": "modellocalscope",
+		"body": [
+			"/**",
+			" * Scope a query to only include ${1:ColumnName} data.",
+			" */",
+			"public function scope${2:columnName}($query): \\Illuminate\\Database\\Eloquent\\Builder",
+			"{",
+			"\treturn \\$query->where('${1:columnName}', '${3:condition}', '${4:value}');",
+			"}"
+		],
+		"description": "Function Apply the scope to a given column Eloquent query builder"
+	},
+	"Scope a query to only include data of a given column.": {
+		"prefix": "modeldinamicscope",
+		"body": [
+			"/**",
+			" * Scope a query to only include data of a given ${1:column_name}.",
+			"*/",
+			"public function scopeOfType($query, $${1:column_name}): \\Illuminate\\Database\\Eloquent\\Builder",
+			"{",
+			"\treturn \\$query->where('${1:column_name}', $${1:column_name});",
+			"}"
+		],
+		"description": "Scope a query to only include data of a given column"
+	},
+	"The event map for the model,": {
+		"prefix": "modelevent",
+		"body": [
+			"/**",
+			" * The event map for the model.",
+			" */",
+			"protected \\$dispatchesEvents = [",
+			"\t// events $0",
+			"];"
+		],
+		"description": "The event map for the model,"
+	},
+	"timestamp,": {
+		"prefix": "modeltimestamp",
+		"body": [
+			"/**",
+			" * Indicates if the model should be timestamped.",
+			" */",
+			"protected \\$timestamps  = ${1:true};"
+		],
+		"description": "model timestamps,"
+	},
+	"Handle events after all transactions are committed.": {
+		"prefix": "modelcomitted",
+		"body": [
+			"/**",
+			" * Handle events after all transactions are committed.",
+			" */",
+			"public bool \\$afterCommit = ${1:true};"
+		],
+		"description": "Handle events after all transactions are committed."
+	},
+	"Get the given column associated with the this model.": {
+		"prefix": "hasOne",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name} associated with the this model.",
+			" */",
+			"public function ${1:column_name}(): HasOne",
+			"{",
+			"\treturn \\$this->hasOne(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
+			"}"
+		],
+		"description": "Get the given column associated with the this model."
+	},
+	"Get has many relations.": {
+		"prefix": "hasMany",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name}s for the current model.",
+			" */",
+			"public function ${1:column_name}s(): HasMany",
+			"{",
+			"\treturn \\$this->hasMany(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
+			"}"
+		],
+		"description": "Get the comments for the current model."
+	},
+	"Get the given column that owns the data.": {
+		"prefix": "belongsTo",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name} that owns the data.",
+			" */",
+			"public function ${1:column_name}(): BelongsTo",
+			"{",
+			"\treturn \\$this->belongsTo(${2:ClassName}::class, '${3:foreign_key}', '${4:owner_key}');",
+			"}"
+		],
+		"description": "Get the given column owns the data."
+	},
+	"Get the given column associated with this model that own the data.": {
+		"prefix": "hasoOneThrough",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name}'s ${2:TargetClass}.",
+			" */",
+			"public function ${1:column_name}${2:TargetClass}()",
+			"{",
+			"\treturn \\$this->hasOneThrough(${2:TargetClass}::class, ${3:TargetSecondClass}::class, '${4:first_id}', '${5:second_id}', '${6:id}', '${7:id}');$0",
+			"}"
+		],
+		"description": "Get the given column associated with this model that own the data."
+	},
+	"Relationship provides a convenient way to access distant relations via an intermediate relation.": {
+		"prefix": "hasManyThrough",
+		"body": [
+			"/**",
+			" * Get all of the ${1:column_name}s for the current model.",
+			" */",
+			"public function ${1:column_name}s()",
+			"{",
+			"\treturn \\$this->hasManyThrough(${2:ClassName}::class, ${3:ClassName}::class, '${4:first_id}', '${5:second_id}', '${6:id}', , '${7:id}');",
+			"}"
+		],
+		"description": "Relationship provides a convenient way to access distant relations via an intermediate relation."
+	},
+	"get the given column name has many relation": {
+		"prefix": "belongsToMany",
+		"body": [
+			"/**",
+			" * The ${1:column_name}s that belong to the current model.",
+			" */",
+			"public function ${1:column_name}s()",
+			"{",
+			"\treturn \\$this->belongsToMany(${2:ClassName::class);",
+			"}"
+		],
+		"description": "get the given column name has many relation."
+	},
+	"Relations with default value as array.": {
+		"prefix": "withdefaultarr",
+		"body": [
+			"->withDefault([",
+			"\t'${1:column_name}' => \"${4:${3:column_name} does't exist.}\",",
+			"]);"
+		],
+		"description": "Relations with default value as array."
+	},
+	"Relations with default value as function.": {
+		"prefix": "withdefaultfunc",
+		"body": [
+			"->withDefault(function ($${1:target}, $${2:current}) {",
+			"\t$${1:target}->${3:column_name} = \"${4:${3:column_name} does't exist.}\";",
+			"});"
+		],
+		"description": "Relations with default value as function."
+	},
+	"Relations with default value as arrow function.": {
+		"prefix": "withdefaultarrfunc",
+		"body": [
+			"->withDefault(fn ($${1:target}, $${2:current}) => $${1:target}->${3:column_name} = \"${4:${3:column_name} does't exist.}\" );"
+		],
+		"description": "Relations with default value as arrow function."
+	},
+	"Relations latest of many.": {
+		"prefix": "lastofmany",
+		"body": ["->latestOfMany();"],
+		"description": "Relations latest of many."
+	},
+	"Relations oldest of many.": {
+		"prefix": "oldofmany",
+		"body": ["->oldestOfMany();"],
+		"description": "Relations oldest of many."
+	},
+	"with pivot.": {
+		"prefix": "withpivot",
+		"body": ["->withPivot('${1:column_name}');"],
+		"description": "with pivot."
+	},
+	"with timestamp.": {
+		"prefix": "withtimestamp",
+		"body": ["->withTimestamps();"],
+		"description": "with timestamp."
+	},
+	"log option.": {
+		"prefix": "logopt",
+		"body": [
+			"/**",
+			" * init activity logs",
+			" */",
+			"public function getActivitylogOptions(): LogOptions${1}",
+			"{",
+			"\treturn LogOptions::defaults()",
+			"\t\t->logAll()",
+			"\t\t->logOnlyDirty()",
+			"\t\t->dontLogIfAttributesChangedOnly(['created_at', 'updated_at'])",
+			"\t\t->setDescriptionForEvent(fn (string \\$eventName) => \"This data has been {\\$eventName}\")",
+			"\t\t->dontSubmitEmptyLogs();",
+			"}"
+		],
+		"description": "with timestamp."
+	},
+	"Std class.": {
+		"prefix": "varstd",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = new \\stdClass;"
+		],
+		"description": "Variable std class."
+	},
+	"The model observers for your application.": {
+		"prefix": "modelobs",
+		"body": [
+			"/**",
+			"* The model observers for your application.",
+			"*/",
+			"protected $observers = [",
+			"\t${1:ClassName}::class => [${1:ClassName}Observer::class],",
+			"];"
+		],
+		"description": "The model observers for your application."
+	},
+	"Laravel public function that return json response.": {
+		"prefix": "pbj",
+		"body": [
+			//
+		],
+		"description": ""
+	},
+	"Laravel public function that return view.": {
+		"prefix": "pbv",
+		"body": [
+			//
+		],
+		"description": ""
+	},
+	"Laravel public function index().": {
+		"prefix": "pbv",
+		"body": [
+			//
+		],
+		"description": ""
+	},
+	"Laravel controller starter variable.": {
+		"prefix": "lcstart",
+		"body": [
+			//
+		],
+		"description": ""
+	}
+}
