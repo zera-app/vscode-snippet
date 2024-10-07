@@ -521,7 +521,7 @@
 		],
 		"description": "Function Apply the scope to a given Eloquent query builder"
 	},
-	"Apply the scope to a given column Eloquent query builder": {
+	"Apply the cast to eloquent model": {
 		"prefix": "modelcast",
 		"body": [
 			"/**",
@@ -531,7 +531,24 @@
 			"\t'${1:column_name}' => '${2:cast_type}',",
 			"];"
 		],
-		"description": "Function Apply the scope to a given column Eloquent query builder"
+		"description": "Function Apply the cast to Eloquent"
+	},
+	"Apply the cast for laravel 11 to eloquent model": {
+		"prefix": "modelcast",
+		"body": [
+			"/**",
+			" * Get the attributes that should be cast.",
+			" *",
+			" * @return array<string, string>",
+			" */",
+			"protected function casts(): array",
+			"{",
+			"\treturn [",
+			"\t\t'${1:column_name}' => '${2:cast_type}',",
+			"\t];",
+			"}",
+		],
+		"description": "Function Apply the casr to Eloquent for laravel 11 "
 	},
 	"Laravel Eloquent model casting": {
 		"prefix": "modellocalscope",
@@ -544,7 +561,7 @@
 			"\treturn \\$query->where('${1:columnName}', '${3:condition}', '${4:value}');",
 			"}"
 		],
-		"description": "Function Apply the scope to a given column Eloquent query builder"
+		"description": "Function Apply the case  to a given column Eloquent scope"
 	},
 	"Scope a query to only include data of a given column.": {
 		"prefix": "modeldinamicscope",
